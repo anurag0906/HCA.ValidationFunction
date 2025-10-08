@@ -20,3 +20,10 @@ Following Steps have been used to develop this solution
 When email ID is incorrect
 
 <img width="1548" height="917" alt="image" src="https://github.com/user-attachments/assets/632ac12d-0484-4941-be93-d916b8de3759" />
+
+
+
+**Step 2: Create a Logic App that can call this function and execute logic.**
+#### Logic app cannot directly all a DLL, hence workaround is to HTTP triggered Function App that can respond with Validation Message
+
+

@@ -26,7 +26,9 @@ When email ID is incorrect
 
 
 ### Please Note
-Local azurite emulator not working properly, (due to personla use Laptop and OS restrictions) hence unable to run "Designer" on local. **Hence had to do development in Azure Portal**
+Local azurite emulator not working properly, (due to personla use Laptop and OS restrictions) hence unable to run "Designer" on local.
+**Hence had to do development in Azure Portal**
+
 <img width="1479" height="929" alt="{371C7812-74C7-47D4-A89E-2BE07B29BD32}" src="https://github.com/user-attachments/assets/97102fa9-4b78-4cf5-99cf-6e7269d9ef7c" />
 
 <div>
@@ -45,4 +47,22 @@ Local azurite emulator not working properly, (due to personla use Laptop and OS 
 
 **2c:Grab App keys**
 <img width="1911" height="758" alt="{D7AFD02F-D349-45E8-89AA-9A4A13583797}" src="https://github.com/user-attachments/assets/86fd26f4-05bb-453b-9f32-8dc357314ee0" />
+
+**2d: Test deployed Azure function app, via Postman**
+### Negative testing
+<img width="1405" height="886" alt="{8C4C55C1-99E0-4005-9A2E-0D518E222F4C}" src="https://github.com/user-attachments/assets/1739357e-450f-46fb-8343-be68bf49b85e" />
+
+### Step 3:  Create a Logic App, that call Azure function via API call
+
+**3a: create a Logic App**
+<img width="1879" height="796" alt="{1B4B4F11-E3E2-45E9-A42F-78CC5CF9D0A2}" src="https://github.com/user-attachments/assets/b526a451-7df7-41be-83cf-cf18b0d5b26f" />
+
+**3b : Create Workflow **
+*create a Trigger, that gets invoked via HTTP call, define Payload schema*
+<img width="1590" height="801" alt="{C2F25A00-4D67-490C-B37B-778E1C7BCBE8}" src="https://github.com/user-attachments/assets/38979b82-288c-440b-849a-f87c48466c2b" />
+
+*Create an **Action** to call Data validator Azure function
+<img width="1507" height="515" alt="{88278F61-C74F-4FCD-A50F-17B9233216F1}" src="https://github.com/user-attachments/assets/3aa98c8c-b087-49ce-980a-6e6ebe872e9a" />
+
+
 

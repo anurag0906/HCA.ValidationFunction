@@ -102,5 +102,7 @@ This action will call Azure function app, and send incoming payload
 
 <img width="1396" height="837" alt="{93AE8A43-94E9-4AC4-85F6-56D0965D0238}" src="https://github.com/user-attachments/assets/63338281-f1dc-48ac-a2f1-59c45fae1393" />
 
+### Negative Testing
+<img width="1387" height="844" alt="{3E5F85BA-7222-497A-B99A-BB0029C467AB}" src="https://github.com/user-attachments/assets/88ecb594-ca0c-4db3-a6cc-97dc4548dbaf" />
 
 

@@ -25,6 +25,7 @@ public class ValidateFunction
 
         var input = await JsonSerializer.DeserializeAsync<CustomerInputDataModel>(req.Body);
 
+        //TODO: DI can be used to inject this depemndency
         var result = new CustomerDataValidation().ValidateCustomerData(input);
 
         var res = req.CreateResponse(System.Net.HttpStatusCode.OK);

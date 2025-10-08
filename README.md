@@ -27,6 +27,7 @@ When email ID is incorrect
 
 ### Please Note
 Local azurite emulator not working properly, (due to personla use Laptop and OS restrictions) hence unable to run "Designer" on local.
+
 **Hence had to do development in Azure Portal**
 
 <img width="1479" height="929" alt="{371C7812-74C7-47D4-A89E-2BE07B29BD32}" src="https://github.com/user-attachments/assets/97102fa9-4b78-4cf5-99cf-6e7269d9ef7c" />
@@ -42,6 +43,7 @@ Local azurite emulator not working properly, (due to personla use Laptop and OS 
 <img width="975" height="518" alt="image" src="https://github.com/user-attachments/assets/46e08fd5-7ec6-4eee-babf-db6cea6d6725" />
 
 **2b:Azure Function App**
+
 **URL:** hcafuncapp1-cbhteydqepc5bvgc.canadacentral-01.azurewebsites.net
 <img width="1887" height="808" alt="{8A498BE1-C4F9-4D04-AEC9-5E91ECE730E0}" src="https://github.com/user-attachments/assets/6db8952b-a58d-4582-a070-0fbd4bac0b1e" />
 
@@ -57,12 +59,17 @@ Local azurite emulator not working properly, (due to personla use Laptop and OS 
 **3a: create a Logic App**
 <img width="1879" height="796" alt="{1B4B4F11-E3E2-45E9-A42F-78CC5CF9D0A2}" src="https://github.com/user-attachments/assets/b526a451-7df7-41be-83cf-cf18b0d5b26f" />
 
-**3b : Create Workflow **
+**3b : Create Workflow**
 *create a Trigger, that gets invoked via HTTP call, define Payload schema*
 <img width="1590" height="801" alt="{C2F25A00-4D67-490C-B37B-778E1C7BCBE8}" src="https://github.com/user-attachments/assets/38979b82-288c-440b-849a-f87c48466c2b" />
 
 *Create an **Action** to call Data validator Azure function
+
+**Azure managed Identity has been choosen, for easy access**
+This action will call Azure function app, send incoming payload
 <img width="1507" height="515" alt="{88278F61-C74F-4FCD-A50F-17B9233216F1}" src="https://github.com/user-attachments/assets/3aa98c8c-b087-49ce-980a-6e6ebe872e9a" />
 
+*Create a HTTP response, to return data from Azure function App*
+<img width="1337" height="533" alt="{9A3D8A7B-4A9D-430C-AC51-F8B37275F45F}" src="https://github.com/user-attachments/assets/4c5162dd-8246-45b5-9f44-f107daeebd0c" />
 
 

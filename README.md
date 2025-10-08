@@ -25,6 +25,6 @@ When email ID is incorrect
 </div>
 
 **Step 2: Create a Logic App that can call this function and execute logic.**
-#### Logic app cannot directly all a DLL, hence workaround is to HTTP triggered Function App that can respond with Validation Message
+#### Logic app cannot directly call a DLL, hence workaround is to call a HTTP triggered Function App that can respond with Validation Message
 
 

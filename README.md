@@ -24,7 +24,20 @@ When email ID is incorrect
   <br/>
 </div>
 
-**Step 2: Create a Logic App that can call this function and execute logic.**
-#### Logic app cannot directly call a DLL, hence workaround is to call a HTTP triggered Function App that can respond with Validation Message
 
+### Please Note
+Local azurite emulator not working properly, (due to personla use Laptop and OS restrictions) hence unable to run "Designer" on local. Hence had to do development in Azure Portal
+<img width="1479" height="929" alt="{371C7812-74C7-47D4-A89E-2BE07B29BD32}" src="https://github.com/user-attachments/assets/97102fa9-4b78-4cf5-99cf-6e7269d9ef7c" />
 
+<div>
+  <br/>
+</div>
+
+### Step 2: Deploy .NET code that validates user data into Azure Function App
+
+**Deployment**
+
+<img width="975" height="518" alt="image" src="https://github.com/user-attachments/assets/46e08fd5-7ec6-4eee-babf-db6cea6d6725" />
+
+Azure Function App
+<img width="1887" height="808" alt="{8A498BE1-C4F9-4D04-AEC9-5E91ECE730E0}" src="https://github.com/user-attachments/assets/6db8952b-a58d-4582-a070-0fbd4bac0b1e" />

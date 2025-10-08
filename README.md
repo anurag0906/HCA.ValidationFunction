@@ -54,7 +54,9 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 
 <img width="1911" height="758" alt="{D7AFD02F-D349-45E8-89AA-9A4A13583797}" src="https://github.com/user-attachments/assets/86fd26f4-05bb-453b-9f32-8dc357314ee0" />
 <br/>
+
 **2d: Test deployed Azure function app, via Postman**
+
 #### Negative testing
 <img width="1405" height="886" alt="{8C4C55C1-99E0-4005-9A2E-0D518E222F4C}" src="https://github.com/user-attachments/assets/1739357e-450f-46fb-8343-be68bf49b85e" />
 
@@ -64,6 +66,7 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 <img width="1879" height="796" alt="{1B4B4F11-E3E2-45E9-A42F-78CC5CF9D0A2}" src="https://github.com/user-attachments/assets/b526a451-7df7-41be-83cf-cf18b0d5b26f" />
 
 <br/>
+
 **3b : Create Workflow**
 
 *create a Trigger, that gets invoked via HTTP call, define Payload schema*

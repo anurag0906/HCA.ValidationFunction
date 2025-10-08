@@ -90,6 +90,7 @@ This action will call Azure function app, send incoming payload
 
 *Test via Postman*
 
+<img width="1310" height="834" alt="{CA32DCF8-BE52-4917-B7F5-829C5AA6399B}" src="https://github.com/user-attachments/assets/5a552271-4b97-4ce1-a08f-5d9c32394c23" />
 
 
 

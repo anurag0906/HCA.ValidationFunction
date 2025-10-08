@@ -21,8 +21,7 @@ public class CustomerDataValidation : ICustomerDataValidation
     {
         var emailResult = _email.ValidateEmail(customer.email);
         var phoneResult = _phone.ValidatePhoneNumber(customer.phoneNumber);
-        //TODO: More Validators can be pluged in here, via
-        //constructor Injection/ Dependency Injection, in a full fledge Web App, i.e. this business logic class can be extended to use DI container
+        //TODO: More Validators can be pluged in here, via DI, i.e. more business validation can be EXTENDED here    
 
         var response = new CustomerOutputValidationResponse()
         {

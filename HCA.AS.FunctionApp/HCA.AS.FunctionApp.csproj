@@ -17,4 +17,9 @@
     <PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="2.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\HCA.AS.BusinessLogic\HCA.AS.BusinessLogic.csproj" />
+    <ProjectReference Include="..\HCA.AS.DomainModels\HCA.AS.DomainModels.csproj" />
+  </ItemGroup>
+
 </Project>

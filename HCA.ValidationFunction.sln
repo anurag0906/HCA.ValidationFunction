@@ -5,6 +5,20 @@ VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCA.AS.FunctionApp", "HCA.AS.FunctionApp\HCA.AS.FunctionApp.csproj", "{C63B7C6B-84F7-4169-88C7-9079CA7F5AC4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Model", "Domain Model", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCA.AS.DomainModels", "HCA.AS.DomainModels\HCA.AS.DomainModels.csproj", "{B150FD0F-713B-4F49-9C95-434F88FF8A2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{AB1364A9-577E-481B-AD1A-2194AA350435}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCA.AS.DomainModels.Interfaces", "HCA.AS.DomainModels.Interfaces\HCA.AS.DomainModels.Interfaces.csproj", "{D2DF7F4E-E8F7-4EF3-84F1-82C963D78C41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Businesas Layer", "Businesas Layer", "{B509554C-C601-4B11-8C8C-697409B39DC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCA.AS.BusinessLogic", "HCA.AS.BusinessLogic\HCA.AS.BusinessLogic.csproj", "{D8749B5F-684F-419F-B043-E23982AF4D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HCA.AS.BusinessLogic.Interfaces", "HCA.AS.BusinessLogic.Interfaces\HCA.AS.BusinessLogic.Interfaces.csproj", "{50C6F101-7B5D-4927-9417-D9FCE2C984DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +29,31 @@ Global
 		{C63B7C6B-84F7-4169-88C7-9079CA7F5AC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C63B7C6B-84F7-4169-88C7-9079CA7F5AC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C63B7C6B-84F7-4169-88C7-9079CA7F5AC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B150FD0F-713B-4F49-9C95-434F88FF8A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B150FD0F-713B-4F49-9C95-434F88FF8A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B150FD0F-713B-4F49-9C95-434F88FF8A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B150FD0F-713B-4F49-9C95-434F88FF8A2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2DF7F4E-E8F7-4EF3-84F1-82C963D78C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2DF7F4E-E8F7-4EF3-84F1-82C963D78C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2DF7F4E-E8F7-4EF3-84F1-82C963D78C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2DF7F4E-E8F7-4EF3-84F1-82C963D78C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8749B5F-684F-419F-B043-E23982AF4D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8749B5F-684F-419F-B043-E23982AF4D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8749B5F-684F-419F-B043-E23982AF4D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8749B5F-684F-419F-B043-E23982AF4D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50C6F101-7B5D-4927-9417-D9FCE2C984DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50C6F101-7B5D-4927-9417-D9FCE2C984DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50C6F101-7B5D-4927-9417-D9FCE2C984DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50C6F101-7B5D-4927-9417-D9FCE2C984DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B150FD0F-713B-4F49-9C95-434F88FF8A2A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D2DF7F4E-E8F7-4EF3-84F1-82C963D78C41} = {AB1364A9-577E-481B-AD1A-2194AA350435}
+		{D8749B5F-684F-419F-B043-E23982AF4D13} = {B509554C-C601-4B11-8C8C-697409B39DC5}
+		{50C6F101-7B5D-4927-9417-D9FCE2C984DE} = {AB1364A9-577E-481B-AD1A-2194AA350435}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0E5C7AE1-DC63-4704-90A5-FBE55F1E93C9}

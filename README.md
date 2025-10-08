@@ -1,4 +1,15 @@
 ## About User data Validation
 
-**HCA.ValidationDunction solution has been written using SOLID principles**
+Following Steps have been used to develop this solution
 
+### Scope : To create a program/DLL to validate user input
+
+**Step 1: Create a user data valiadtion logic to check Email ID and Phone numbe.**
+- Code has been written using SOLID principles
+- Dependency Injection has been added
+- Unit testing can be added later
+
+### Local Testing
+#### Positive Testing
+
+<img width="1598" height="967" alt="image" src="https://github.com/user-attachments/assets/8caf7877-874c-4ecb-8cab-9ad7b0f81cb8" />

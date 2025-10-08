@@ -1,7 +1,7 @@
 using HCA.AS.BusinessLogic;
+using HCA.AS.BusinessLogic.Interfaces;
 using HCA.AS.DomainModels;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
@@ -12,10 +12,12 @@ namespace HCA.AS.FunctionApp;
 public class ValidateFunction
 {
     private readonly ILogger<ValidateFunction> _logger;
+    private ICustomerDataValidation _customerDataValidation;
 
-    public ValidateFunction(ILogger<ValidateFunction> logger)
+    public ValidateFunction(ILogger<ValidateFunction> logger, ICustomerDataValidation customerDataValidation)
     {
         _logger = logger;
+        _customerDataValidation = customerDataValidation;
     }
 
     [Function("validate")]
@@ -25,8 +27,7 @@ public class ValidateFunction
 
         var input = await JsonSerializer.DeserializeAsync<CustomerInputDataModel>(req.Body);
 
-        //TODO: DI can be used to inject this depemndency
-        var result = new CustomerDataValidation().ValidateCustomerData(input);
+        var result = _customerDataValidation.ValidateCustomerData(input);
 
         var res = req.CreateResponse(System.Net.HttpStatusCode.OK);
         await res.WriteAsJsonAsync(result);

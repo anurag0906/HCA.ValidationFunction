@@ -4,5 +4,5 @@ namespace HCA.AS.BusinessLogic.Interfaces;
 
 public interface ICustomerDataValidation
 {
-    ICustomerOutputValidationResponse ValidateCustomerData(ICustomerInputDataModel customer);
+  public  ICustomerOutputValidationResponse ValidateCustomerData(ICustomerInputDataModel customer);
 }

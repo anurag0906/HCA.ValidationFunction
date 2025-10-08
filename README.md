@@ -25,7 +25,7 @@ When email ID is incorrect
 </div>
 
 
-### Please Note
+### Important: Please Note
 Local azurite emulator not working properly, (since Personal use laptop with Home edition have various OS, setup, network and other restrictions) hence unable to run "Designer" on local.
 
 **Hence had to do development in Azure Portal**

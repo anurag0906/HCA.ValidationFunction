@@ -45,6 +45,7 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 **2b:Azure Function App**
 
 **URL:** hcafuncapp1-cbhteydqepc5bvgc.canadacentral-01.azurewebsites.net
+
 <img width="1887" height="808" alt="{8A498BE1-C4F9-4D04-AEC9-5E91ECE730E0}" src="https://github.com/user-attachments/assets/6db8952b-a58d-4582-a070-0fbd4bac0b1e" />
 
 
@@ -67,7 +68,7 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 
 *create a Trigger, that gets invoked via HTTP call, define Payload schema*
 <img width="1590" height="801" alt="{C2F25A00-4D67-490C-B37B-778E1C7BCBE8}" src="https://github.com/user-attachments/assets/38979b82-288c-440b-849a-f87c48466c2b" />
-
+<br/>
 
 *Create an **Action** to call Data validator Azure function
 
@@ -75,8 +76,20 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 
 This action will call Azure function app, send incoming payload
 <img width="1507" height="515" alt="{88278F61-C74F-4FCD-A50F-17B9233216F1}" src="https://github.com/user-attachments/assets/3aa98c8c-b087-49ce-980a-6e6ebe872e9a" />
-<<br/>
+<br/>
 *Create a HTTP response, to return data from Azure function App*
 <img width="1337" height="533" alt="{9A3D8A7B-4A9D-430C-AC51-F8B37275F45F}" src="https://github.com/user-attachments/assets/4c5162dd-8246-45b5-9f44-f107daeebd0c" />
+
+<br/>
+**3c: Testing Logic App**
+
+*Grab HTTP URL for logic app*
+
+
+<img width="1485" height="423" alt="{3531258E-CE9E-425B-B32F-D903D2B6B372}" src="https://github.com/user-attachments/assets/30933cd5-515b-4b88-8271-2c855d6ad130" />
+
+*Test via Postman*
+
+
 
 

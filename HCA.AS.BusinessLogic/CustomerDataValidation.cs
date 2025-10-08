@@ -7,17 +7,14 @@ namespace HCA.AS.BusinessLogic;
 
 public class CustomerDataValidation : ICustomerDataValidation
 {
-    public EmailValidator _email { get; set; }
-    public PhoneNumberValidator _phone { get; set; }
+    public IEmailValidator _email { get; set; }
+    public IPhoneNumberValidator _phone { get; set; }
 
-    public CustomerDataValidation()
+    public CustomerDataValidation(IPhoneNumberValidator phoneNumberValidator, IEmailValidator emailValidator)
     {
-        _phone = new PhoneNumberValidator();
-        _email = new EmailValidator();
-
-        //TODO :this code can be changed to use dependency injection, i.e. inside startup.cs class  phone numner and
-        //Email calss can be moved to a sperate Vaidation project with their respective Interfaces and
-        //can be initilizaed via construction injection. Hence NEW keyword can be removed (later)
+        _phone = phoneNumberValidator;
+        _email = emailValidator;
+               
     }
 
     public ICustomerOutputValidationResponse ValidateCustomerData(ICustomerInputDataModel customer)

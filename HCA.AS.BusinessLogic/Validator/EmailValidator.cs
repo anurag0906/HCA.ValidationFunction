@@ -1,16 +1,13 @@
-﻿using HCA.AS.DomainModels;
+﻿using HCA.AS.BusinessLogic.Interfaces;
+using HCA.AS.DomainModels;
 using HCA.AS.DomainModels.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
-namespace HCA.AS.BusinessLogic.Validator; 
+namespace HCA.AS.BusinessLogic.Validator;
+
 
 //TODO: Validation class can be moved to a seperate project and injected via DI
-public class EmailValidator
+public class EmailValidator : IEmailValidator
 {
     public ICustomerValidationResult ValidateEmail(string email)
     {

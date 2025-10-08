@@ -1,13 +1,13 @@
-﻿using HCA.AS.DomainModels;
+﻿using HCA.AS.BusinessLogic.Interfaces;
+using HCA.AS.DomainModels;
 using HCA.AS.DomainModels.Interfaces;
 using System.Text.RegularExpressions;
 
 namespace HCA.AS.BusinessLogic.Validator;
 
-
 //TODO: Validation class can be moved to a seperate project and injected via DI
 
-public class PhoneNumberValidator
+public class PhoneNumberValidator : IPhoneNumberValidator
 {
     public ICustomerValidationResult ValidatePhoneNumber(string phoneNumber)
     {

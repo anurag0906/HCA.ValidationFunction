@@ -26,7 +26,7 @@ When email ID is incorrect
 
 
 ### Please Note
-Local azurite emulator not working properly, (since Personal use laptop with Home edition have various OS and other restrictions) hence unable to run "Designer" on local.
+Local azurite emulator not working properly, (since Personal use laptop with Home edition have various OS, setup, network and other restrictions) hence unable to run "Designer" on local.
 
 **Hence had to do development in Azure Portal**
 
@@ -42,18 +42,18 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 
 <img width="975" height="518" alt="image" src="https://github.com/user-attachments/assets/46e08fd5-7ec6-4eee-babf-db6cea6d6725" />
 
-**2b:Azure Function App**
+**2b:  Azure Function App**
 
 **URL:** hcafuncapp1-cbhteydqepc5bvgc.canadacentral-01.azurewebsites.net
 
 <img width="1887" height="808" alt="{8A498BE1-C4F9-4D04-AEC9-5E91ECE730E0}" src="https://github.com/user-attachments/assets/6db8952b-a58d-4582-a070-0fbd4bac0b1e" />
 
+<br/>
 
-
-**2c:Grab App keys**
+**2c:  Grab App keys**
 
 <img width="1911" height="758" alt="{D7AFD02F-D349-45E8-89AA-9A4A13583797}" src="https://github.com/user-attachments/assets/86fd26f4-05bb-453b-9f32-8dc357314ee0" />
-
+<br/>
 **2d: Test deployed Azure function app, via Postman**
 #### Negative testing
 <img width="1405" height="886" alt="{8C4C55C1-99E0-4005-9A2E-0D518E222F4C}" src="https://github.com/user-attachments/assets/1739357e-450f-46fb-8343-be68bf49b85e" />
@@ -63,30 +63,35 @@ Local azurite emulator not working properly, (since Personal use laptop with Hom
 **3a: create a Logic App**
 <img width="1879" height="796" alt="{1B4B4F11-E3E2-45E9-A42F-78CC5CF9D0A2}" src="https://github.com/user-attachments/assets/b526a451-7df7-41be-83cf-cf18b0d5b26f" />
 
-
+<br/>
 **3b : Create Workflow**
 
 *create a Trigger, that gets invoked via HTTP call, define Payload schema*
 <img width="1590" height="801" alt="{C2F25A00-4D67-490C-B37B-778E1C7BCBE8}" src="https://github.com/user-attachments/assets/38979b82-288c-440b-849a-f87c48466c2b" />
 <br/>
 
-*Create an **Action** to call Data validator Azure function
+*Create an **Action** to call Data validator Azure function*
 
 **Azure managed Identity has been choosen, for easy access**
 
-This action will call Azure function app, send incoming payload
+This action will call Azure function app, and send incoming payload
 <img width="1507" height="515" alt="{88278F61-C74F-4FCD-A50F-17B9233216F1}" src="https://github.com/user-attachments/assets/3aa98c8c-b087-49ce-980a-6e6ebe872e9a" />
 <br/>
+
 *Create a HTTP response, to return data from Azure function App*
 <img width="1337" height="533" alt="{9A3D8A7B-4A9D-430C-AC51-F8B37275F45F}" src="https://github.com/user-attachments/assets/4c5162dd-8246-45b5-9f44-f107daeebd0c" />
 
 <br/>
+
+
 **3c: Testing Logic App**
 
 *Grab HTTP URL for logic app*
 
 
 <img width="1485" height="423" alt="{3531258E-CE9E-425B-B32F-D903D2B6B372}" src="https://github.com/user-attachments/assets/30933cd5-515b-4b88-8271-2c855d6ad130" />
+
+
 
 *Test via Postman*
 
